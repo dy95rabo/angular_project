@@ -25,9 +25,9 @@ jobs:
       - name: Test
         run: npm run test -- --watch=false --browsers=ChromeHeadless
       - name: Build
-        run: npm run build -- -c production --base-href "https://<YOUR_GITHUB_USER_NAME>.github.io/<YOUR_REPOSITORY>/"
+        run: npm run build -- -c production --base-href "https://dy95rabo.github.io/angular_project/"
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
 
@@ -44,4 +44,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
