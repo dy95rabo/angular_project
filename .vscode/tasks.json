@@ -3,6 +3,49 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "install extensions",
+      "type": "shell",
+      "hide": true,
+      "isBackground": false,
+      "presentation": {
+        "reveal": "never",
+        "revealProblems": "onProblem"
+      },
+      "command": [
+        // "workbench.extensions.action.updateAllExtensions",
+        "code --install-extension johnpapa.angular-essentials --force",
+        "code --install-extension cyrilletuzi.angular-schematics --force",
+        "code --install-extension Angular.ng-template --force",
+        "code --install-extension streetsidesoftware.code-spell-checker",
+        "code --install-extension usernamehw.errorlens",
+        "code --install-extension zignd.html-css-class-completion",
+        "code --install-extension tyriar.lorem-ipsum",
+        "code --install-extension balduinlandolt.surround-with-tag",
+        "code --install-extension albert.tabout",
+        "code --install-extension aaron-bond.better-comments",
+        "code --install-extension firefox-devtools.vscode-firefox-debug",
+        "code --install-extension Zignd.html-css-class-completion",
+        "code --install-extension alexiv.vscode-angular2-files"
+      ]
+    },
+    {
+      "label": "install all extensions",
+      "isBackground": false,
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "type": "shell",
+      "command": [
+        "code --install-extension streetsidesoftware.code-spell-checker-german"
+      ],
+      "dependsOn": "install extensions",
+      "presentation": {
+        "reveal": "never",
+        "revealProblems": "onProblem",
+        "close": true
+      }
+    },
+    {
       "type": "npm",
       "script": "start",
       "isBackground": true,
