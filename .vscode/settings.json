@@ -1,5 +1,7 @@
 {
     "extensions.closeExtensionDetailsOnViewChange": true,
-    "extensions.autoUpdate": true,
-    
+    "task.allowAutomaticTasks": "on",
+    "cSpell.language": "en, de-de",
+    "files.autoSave": "onFocusChange",
+    "workbench.iconTheme":  "vscode-icons",
 }
