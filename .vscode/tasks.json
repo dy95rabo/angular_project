@@ -22,12 +22,45 @@
         "code --install-extension tyriar.lorem-ipsum",
         "code --install-extension balduinlandolt.surround-with-tag",
         "code --install-extension albert.tabout",
+        "code --install-extension vscode-icons-team.vscode-icons",
         "code --install-extension aaron-bond.better-comments",
         "code --install-extension firefox-devtools.vscode-firefox-debug",
         "code --install-extension Zignd.html-css-class-completion",
-        "code --install-extension alexiv.vscode-angular2-files"
+        "code --install-extension alexiv.vscode-angular2-files",
+        "code --install-extension ms-azuretools.vscode-docker",
+        "code --uninstall-extension GitHub.copilot",
       ]
     },
+
+
+
+
+    {
+      "label": "npm install",
+      "isBackground": false,
+      "runOptions": {
+        "runOn": "folderOpen",
+        
+      },
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem",
+        "clear": true,
+        "close": true
+      },
+      "type": "npm",
+      "script": "install",
+    },
+
+
+
+
+
+
+
+
+
+
     {
       "label": "install all extensions",
       "isBackground": false,
@@ -40,7 +73,7 @@
       ],
       "dependsOn": "install extensions",
       "presentation": {
-        "reveal": "never",
+        // "reveal": "never",
         "revealProblems": "onProblem",
         "close": true
       }

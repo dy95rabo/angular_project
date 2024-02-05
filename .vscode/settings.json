@@ -4,4 +4,7 @@
     "cSpell.language": "en, de-de",
     "files.autoSave": "onFocusChange",
     "workbench.iconTheme":  "vscode-icons",
+    "vsicons.dontShowNewVersionMessage":true,
+    "editor.minimap.enabled": false
+
 }
