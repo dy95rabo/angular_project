@@ -1,5 +1,14 @@
-<app-example-a [headline]="'Test Überschrift'"></app-example-a>
-<app-example-a [headline]="'Test Überschrift2'"></app-example-a>
+<nav>
+    <ul>
+        <li>
+            <a [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
 
-<app-dropdown></app-dropdown>
+        </li>
+        <li>
+            <a [routerLink]="['/testroute']" routerLinkActive="router-link-active" >TestRoute</a>
+
+        </li>
+    </ul>
+</nav>
+
 <router-outlet />

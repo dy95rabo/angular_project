@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
 
 @Component({
@@ -7,7 +7,8 @@ import { SharedModule } from './shared/shared.module';
   standalone: true,
   imports: [
     RouterOutlet,
-    SharedModule
+    SharedModule,
+    RouterModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
