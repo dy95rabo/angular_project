@@ -2,19 +2,23 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExampleAComponent } from './example-a/example-a.component';
 import { ExampleBComponent } from './example-b/example-b.component';
-import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAlertModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+import { DropdownComponent } from './dropdown/dropdown.component';
 @NgModule({
   imports: [
     CommonModule,
-    NgbAlertModule
+    NgbAlertModule,
+    NgbDropdownModule
   ],
   declarations: [
     ExampleAComponent,
-    ExampleBComponent
+    ExampleBComponent,
+    DropdownComponent
   ],
   exports:[
     ExampleAComponent,
-    ExampleBComponent
+    ExampleBComponent,
+    DropdownComponent
   ]
 })
 export class SharedModule { }
