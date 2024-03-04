@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
+import { TictactoeModule } from './tictactoe/tictactoe.module';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     RouterOutlet,
     SharedModule,
-    RouterModule
+    RouterModule,
+    TictactoeModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
