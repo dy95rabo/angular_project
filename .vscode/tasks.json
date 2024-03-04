@@ -27,7 +27,8 @@
         "code --install-extension firefox-devtools.vscode-firefox-debug",
         "code --install-extension Zignd.html-css-class-completion",
         "code --install-extension alexiv.vscode-angular2-files",
-        "code --install-extension ms-azuretools.vscode-docker",
+        "code --install-extension nrwl.angular-console",
+        "code --uninstall-extension ms-azuretools.vscode-docker",
         "code --uninstall-extension GitHub.copilot",
       ]
     },
