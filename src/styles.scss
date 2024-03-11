@@ -5,3 +5,11 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+@import 'themes';
+
+@import '@nebular/theme/styles/globals';
+
+@include nb-install() {
+  @include nb-theme-global();
+};

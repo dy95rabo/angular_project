@@ -1,0 +1,9 @@
+.my_container{
+    width: 40%
+}
+@media only screen and (max-width: 700px){
+    .my_container{
+        width: 100%
+    }
+}
+    
