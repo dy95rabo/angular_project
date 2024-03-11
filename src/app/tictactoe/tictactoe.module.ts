@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 import { TictactoeComponent } from './tictactoe.component';
 import { SquareComponent } from './square/square.component';
 import { BoardComponent } from './board/board.component';
+import { TictactoeRoutes } from './tictactoe.routing';
 
 @NgModule({
   imports: [
     CommonModule,
+    TictactoeRoutes
     
     
   ],
@@ -15,8 +17,6 @@ import { BoardComponent } from './board/board.component';
     SquareComponent,
     BoardComponent
   ],
-  exports:[
-    TictactoeComponent,
-  ]
+  exports:[]
 })
 export class TictactoeModule { }

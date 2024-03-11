@@ -5,6 +5,10 @@
     "files.autoSave": "onFocusChange",
     "workbench.iconTheme":  "vscode-icons",
     "vsicons.dontShowNewVersionMessage":true,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "cSpell.words": [
+        "tictactoe",
+        "Tictactoe"
+    ]
 
 }

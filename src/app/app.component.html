@@ -1,18 +1,5 @@
-<nav>
-    <ul>
-        <li>
-            <a [routerLink]="['/']" routerLinkActive="router-link-active" >Home</a>
 
-        </li>
-        <li>
-            <a [routerLink]="['/testroute']" routerLinkActive="router-link-active" >TestRoute</a>
-
-        </li>
-        <li>
-            <a [routerLink]="['/tictactoe']" routerLinkActive="router-link-active" >TicTacToe</a>
-
-        </li>
-    </ul>
-</nav>
-
-<router-outlet />
+<div class="container">
+    <app-navigation></app-navigation>
+    <router-outlet />
+</div>
