@@ -4,12 +4,12 @@
 @import 'bootstrap/scss/bootstrap';
 
 /* Importing Bootstrap SCSS file. */
-@import 'bootstrap/scss/bootstrap';
+//@import 'bootstrap/scss/bootstrap';
 
 @import 'themes';
 
-@import '@nebular/theme/styles/globals';
+//@import '@nebular/theme/styles/globals';
 
-@include nb-install() {
-  @include nb-theme-global();
-};
+//@include nb-install() {
+//  @include nb-theme-global();
+//};
