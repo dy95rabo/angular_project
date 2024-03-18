@@ -16,6 +16,10 @@ const routes: Routes = [
         path:'tictactoe',
         loadChildren: () =>import('./tictactoe/tictactoe.module').then((m:any)=>m.TictactoeModule)
     },
+    {
+        path:'fill-with-dots',
+        loadChildren: () =>import('./fill-with-dots/fill-with-dots.module').then((m:any)=>m.FillWithDotsModule)
+    },
 ];
 
 @NgModule({

@@ -1,0 +1,26 @@
+<h1>Fill with Dots</h1>
+<div class="game-container">
+  <div 
+  #dotRefs
+  class="dot" 
+  *ngFor="let dot of dots"
+  (mouseover) = "changeStyle(dotRefs)"
+  >
+  
+  </div>
+</div>
+<div class="counter">
+ <div *ngIf="isGameStarted && !isGameEnded">
+  {{counter}}
+</div> 
+<div *ngIf="!isGameEnded && !isGameStarted">
+  Move your mouse inside the box to start the game
+</div>
+<div *ngIf="isGameStarted && isGameEnded && isWon">
+  Wow! you won!!
+</div>
+<div *ngIf="isGameStarted && isGameEnded && !isWon">
+  L..L..L..Loooooooser! <br> You missed {{cleanCount}} dot(s)!! <br> git gud!
+</div>
+
+</div>

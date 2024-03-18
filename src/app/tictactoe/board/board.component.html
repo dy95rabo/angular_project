@@ -8,6 +8,16 @@
 </div>
 <br>
 
+<main class="container">
+    <app-square *ngFor="let square of squares; let i = index"
+    [value] = "square"
+    (click) = "makeMove(i)"
+    >
+  </app-square>
+</main>
+
+<br>
+
 <div *ngIf="winner" class="container">
   <ngb-alert [dismissible]="false">
     <h2>
@@ -17,11 +27,3 @@
   </ngb-alert>
   <br>
 </div>
-
-<main class="container">
-    <app-square *ngFor="let square of squares; let i = index"
-    [value] = "square"
-    (click) = "makeMove(i)"
-    >
-  </app-square>
-</main>
